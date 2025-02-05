@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bucket List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <h1>🌟 My Bucket List</h1>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+    </header>
+
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Enter a new bucket list item">
+            <input type="date" id="taskDate">
+            <select id="taskCategory">
+                <option value="Travel">🌍 Travel</option>
+                <option value="Career">💼 Career</option>
+                <option value="Personal Growth">📚 Personal Growth</option>
+                <option value="Adventure">🎢 Adventure</option>
+            </select>
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <div class="progress-container">
+            <progress id="progressBar" value="0" max="100"></progress>
+            <span id="progressText">0% Completed</span>
+        </div>
+
+        <ul id="bucketList" class="bucket-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
