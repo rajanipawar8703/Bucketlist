@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #6a0572;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background: #6a0572;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #8a2be2;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #6a0572;
+    border-radius: 5px;
+    outline: none;
+}
+
+.bucket-list {
+    list-style: none;
+    padding: 0;
+}
+
+.bucket-list li {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: grab;
+}
+
+.bucket-list li.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.category {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.travel { background: #2ecc71; color: white; }
+.career { background: #3498db; color: white; }
+.personal-growth { background: #e74c3c; color: white; }
+.adventure { background: #f39c12; color: white; }
+
+.due-date {
+    font-size: 12px;
+    color: gray;
+}
+
+.task-btns button {
+    margin-left: 10px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode header {
+    background: #444;
+}
+
+.dark-mode .bucket-list li {
+    background: #333;
+    color: white;
+}
+
+.dark-mode button {
+    background: #888;
+}
+
+.progress-container {
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+}
